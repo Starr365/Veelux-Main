@@ -31,14 +31,14 @@ const features = [
 
 export default function WhyChoose() {
     return (
-        <section className="w-full bg-black px-6 md:px-10 lg:px-12 py-16 md:py-20 lg:py-24">
+        <section className="w-full px-6 md:px-10 lg:px-12 py-16 md:py-20 lg:py-24">
             {/* Small Decorative Divider */}
             <div className="flex justify-center mb-5">
-                <div className="w-8 h-[2px] bg-glass-subtle rounded-full" />
+                <div className="w-8 h-[2px] bg-white/30 rounded-full" />
             </div>
 
             {/* Subtitle */}
-            <p className="text-center text-[10px] md:text-xs tracking-[0.3em] uppercase text-glass-subtle font-normal mb-4 md:mb-5">
+            <p className="text-center text-[10px] md:text-xs tracking-[0.3em] uppercase text-white/30 font-normal mb-4 md:mb-5">
                 Why Choose Veelux
             </p>
 
@@ -68,7 +68,7 @@ export default function WhyChoose() {
                             </h3>
 
                             {/* Description */}
-                            <p className="text-glass-subtle text-[10px] md:text-[11px] leading-[1.7] font-normal max-w-[240px] mx-auto">
+                            <p className="text-white/30 text-[10px] md:text-[11px] leading-[1.7] font-normal max-w-[240px] mx-auto">
                                 {feature.description}
                             </p>
                         </div>
@@ -77,7 +77,7 @@ export default function WhyChoose() {
             </div>
 
             {/* Large Full-Width Image */}
-            <div className="relative w-full h-[280px] md:h-[380px] lg:h-[460px] rounded-[16px] overflow-hidden border border-glass-ghost">
+            <div className="relative w-full h-[280px] md:h-[380px] lg:h-[460px] rounded-[16px] overflow-hidden border border-white/8">
                 <Image
                     src="/watch_hero.jpg"
                     alt="Luxury watch craftsmanship"

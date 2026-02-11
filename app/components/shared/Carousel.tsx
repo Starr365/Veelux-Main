@@ -59,14 +59,14 @@ export default function Carousel({
             >
                 <button
                     onClick={() => swiperRef.current?.slidePrev()}
-                    className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-glass-subtle flex items-center justify-center hover:bg-glass-ghost transition-colors"
+                    className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/8 transition-colors"
                     aria-label="Previous slide"
                 >
                     <GoArrowLeft className="w-4 h-4 md:w-[18px] md:h-[18px] text-white" />
                 </button>
                 <button
                     onClick={() => swiperRef.current?.slideNext()}
-                    className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-glass-subtle flex items-center justify-center hover:bg-glass-ghost transition-colors"
+                    className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/8 transition-colors"
                     aria-label="Next slide"
                 >
                     <GoArrowRight className="w-4 h-4 md:w-[18px] md:h-[18px] text-white" />

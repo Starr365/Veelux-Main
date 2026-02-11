@@ -69,11 +69,11 @@ const products = [
 
 export default function Products() {
     return (
-        <section className="w-full bg-black px-6 md:px-10 lg:px-12 pt-10 pb-16 md:pt-14 md:pb-20">
+        <section id="products" className="w-full px-6 md:px-10 lg:px-12 pt-10 pb-16 md:pt-14 md:pb-20">
             {/* Header Row */}
             <div className="flex items-end justify-between mb-8 md:mb-10">
                 <div>
-                    <p className="text-[11px] md:text-xs tracking-[0.25em] uppercase text-glass-subtle font-normal mb-2 md:mb-3">
+                    <p className="text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/30 font-normal mb-2 md:mb-3">
                         Discover Veelux
                     </p>
                     <h2 className="text-[22px] md:text-[28px] lg:text-[34px] font-extrabold text-white leading-[1.15] uppercase tracking-tight">

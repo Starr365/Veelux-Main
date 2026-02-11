@@ -44,7 +44,7 @@ export default function Testimonials() {
     const swiperRef = useRef<SwiperType | null>(null);
 
     return (
-        <section className="w-full bg-black px-6 md:px-10 lg:px-12 py-16 md:py-20 lg:py-24">
+        <section id="reviews" className="w-full px-6 md:px-10 lg:px-12 py-16 md:py-20 lg:py-24">
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 md:gap-8 lg:gap-10">
                 {/* Left - Static Image */}
                 <div className="relative w-full h-[260px] md:h-auto md:min-h-[280px] rounded-[14px] overflow-hidden">
@@ -75,12 +75,12 @@ export default function Testimonials() {
                         {testimonials.map((testimonial, index) => (
                             <SwiperSlide key={index}>
                                 <div className="pr-2">
-                                    <p className="text-glass-heavy text-[13px] md:text-[14px] lg:text-[15px] font-light leading-[1.8] wrap-break-word whitespace-normal">
+                                    <p className="text-white/40 text-[13px] md:text-[14px] lg:text-[15px] font-light leading-[1.8] wrap-break-word whitespace-normal">
                                         {testimonial.quote}
                                     </p>
 
                                     <div className="flex items-center gap-3 mt-6">
-                                        <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 border border-glass-ghost">
+                                        <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 border border-white/8">
                                             <Image
                                                 src={testimonial.avatar}
                                                 alt={testimonial.name}
@@ -92,7 +92,7 @@ export default function Testimonials() {
                                             <p className="text-white text-[13px] font-semibold">
                                                 {testimonial.name}
                                             </p>
-                                            <p className="text-glass text-[11px] font-light">
+                                            <p className="text-white/25 text-[11px] font-light">
                                                 {testimonial.role}
                                             </p>
                                         </div>
@@ -106,14 +106,14 @@ export default function Testimonials() {
                     <div className="flex gap-2 mt-6">
                         <button
                             onClick={() => swiperRef.current?.slidePrev()}
-                            className="w-9 h-9 rounded-lg border border-glass-border flex items-center justify-center hover:bg-glass-ghost transition-colors"
+                            className="w-9 h-9 rounded-lg border border-white/25 flex items-center justify-center hover:bg-white/8 transition-colors"
                             aria-label="Previous testimonial"
                         >
                             <GoArrowLeft className="w-4 h-4 text-white" />
                         </button>
                         <button
                             onClick={() => swiperRef.current?.slideNext()}
-                            className="w-9 h-9 rounded-lg border border-glass-border flex items-center justify-center hover:bg-glass-ghost transition-colors"
+                            className="w-9 h-9 rounded-lg border border-white/25 flex items-center justify-center hover:bg-white/8 transition-colors"
                             aria-label="Next testimonial"
                         >
                             <GoArrowRight className="w-4 h-4 text-white" />

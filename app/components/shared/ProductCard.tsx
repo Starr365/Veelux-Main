@@ -29,16 +29,14 @@ export default function ProductCard({
                 />
 
                 {/* Top Right - Label */}
-                <div className="absolute top-3.5 right-3.5 bg-overlay backdrop-blur-md border border-glass-faint rounded-full px-3.5 py-1">
+                <div className="absolute top-3.5 right-3.5 bg-black/20 backdrop-blur-md border border-white/15 rounded-full px-3.5 py-1">
                     <span className="text-white text-[10px] md:text-[11px] font-medium">
                         {label}
                     </span>
                 </div>
 
                 {/* Bottom - Glassmorphism bar */}
-                <div
-                    className="absolute bottom-3 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] rounded-xl px-3.5 py-2.5 flex flex-col justify-center items-center gap-2.5 bg-glass-md shadow-[0px_4px_4px_var(--color-overlay)]"
-                >
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] rounded-xl px-3.5 py-2.5 flex flex-col justify-center items-center gap-2.5 bg-white/30 shadow-[0px_4px_4px_rgba(0,0,0,0.2)]">
                     {/* Inner row: name+subtitle left, price right */}
                     <div className="w-full flex flex-row justify-between items-center gap-4">
                         {/* Left - Name & Subtitle */}
