@@ -22,7 +22,7 @@ Veelux is a premium luxury watch landing page built for a high-end watch brand. 
 
 ## Key Features & Challenges
 
-The main challenge was translating pixel-perfect mockup designs into responsive components without any design system provided upfront. I had to reverse-engineer the exact opacity values, spacing, and color relationships from reference images, then organize them into a reusable token system. This taught me how to think systematically about design — instead of matching colors one-by-one, I identified that the entire palette was built from just two base colors (white and black) at varying opacities, plus two accent colors.
+The main challenge was translating pixel-perfect mockup designs into responsive components with design thinking involved. I had to ensure that the design was consistent across all components and that the layout was responsive to different screen sizes.Also, I had to ensure that the design was matching with what was given in the figma design. 
 
 The carousel architecture was another interesting problem. The Products section and Testimonials section both needed carousels, but with fundamentally different layouts — Products shows multiple sliding cards with external navigation, while Testimonials keeps a static image and only rotates the text content. I solved this by building a shared `Carousel` component for the common case, but keeping the Testimonials implementation separate since forcing it into the shared abstraction would have added unnecessary complexity. Knowing when *not* to abstract is just as important as DRY code.
 
