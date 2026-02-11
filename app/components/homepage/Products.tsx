@@ -88,11 +88,11 @@ export default function Products() {
             {/* Carousel */}
             <Carousel
                 spaceBetween={16}
-                slidesPerView={4}
+                slidesPerView={1}
                 breakpoints={{
                     480: { slidesPerView: 2, spaceBetween: 16 },
-                    768: { slidesPerView: 3, spaceBetween: 18 },
-                    1024: { slidesPerView: 4, spaceBetween: 20 },
+                    768: { slidesPerView: 2, spaceBetween: 18 },
+                    1024: { slidesPerView: 3, spaceBetween: 20 },
                     1280: { slidesPerView: 4, spaceBetween: 20 },
                 }}
                 autoplayDelay={2000}
