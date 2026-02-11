@@ -4,6 +4,10 @@ Veelux is a premium luxury watch landing page built for a high-end watch brand. 
 
 ---
 
+## Screenshots
+![Hero Section — Desktop](./public/screenshots/hero_desktop.jpg)
+
+
 ## Technologies Used
 
 **Frontend:** Next.js 16.1.6 with the App Router, React 19.2.3, and TypeScript 5 for static type safety across all components.
@@ -117,38 +121,6 @@ No environment variables are required. The project has no backend, database, or 
 | `npm run build` | Create optimized production build |
 | `npm run start` | Serve the production build locally |
 | `npm run lint` | Run ESLint checks across all files |
-
----
-
-## Screenshots
-
-> **TODO:** Add screenshots of the live site. Capture at both desktop (1440px) and mobile (375px) widths to demonstrate responsive design.
-
-<!-- Uncomment and update paths after adding screenshots:
-
-### Desktop Views
-
-![Hero Section — Desktop](./public/screenshots/hero_desktop.png)
-*Split-screen hero with headline, preview watches, and full-bleed hero image*
-
-![Products Carousel — Desktop](./public/screenshots/products_desktop.png)
-*10-card product carousel with glassmorphism cards and navigation arrows*
-
-![Testimonials — Desktop](./public/screenshots/testimonials_desktop.png)
-*Static image + auto-rotating client quotes in a CSS Grid layout*
-
-![Footer — Desktop](./public/screenshots/footer_desktop.png)
-*3-column footer with tilted watch watermark and "VEELUX" branding*
-
-### Mobile Views
-
-![Hero Section — Mobile](./public/screenshots/hero_mobile.png)
-*Stacked layout with full-width hero image below the headline*
-
-![Products — Mobile](./public/screenshots/products_mobile.png)
-*Single-card carousel view with swipe navigation*
-
--->
 
 ---
 
