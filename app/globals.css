@@ -1,10 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent: #BBFF7F;
+  --color-cream: #FEFFE7;
+  --color-muted: #D9D9D9;
+  --color-glass-heavy: #FFFFFF63;
+  --color-glass-md: #FFFFFF54;
+  --color-glass: #FFFFFF45;
+  --color-glass-border: #FFFFFF40;
+  --color-glass-subtle: #FFFFFF4D;
+  --color-glass-faint: #FFFFFF2B;
+  --color-glass-ghost: #FFFFFF14;
+  --color-overlay: #00000033;
+}
+
 @layer utilities {
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

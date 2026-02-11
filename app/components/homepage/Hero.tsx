@@ -11,36 +11,36 @@ export default function Hero() {
           <br />
           <span className="text-white">UNIQUE, DURABLE</span>
           <br />
-          <span className="text-white">COMFORTABLE CHAIRS.</span>
+          <span className="text-white">PREMIUM WATCHES.</span>
         </h1>
 
-        {/* Three Chair Images Row */}
+        {/* Three Watch Images Row */}
         <div className="flex gap-3 md:gap-4 mb-8 md:mb-10 lg:mb-12 relative z-20">
-          {/* Chair 1 - Gray modern chair (using chair_3 temporarily as placeholder) */}
-          <div className="relative w-[120px] h-[90px] md:w-[140px] md:h-[105px] lg:w-[160px] lg:h-[115px] rounded-[14px] overflow-hidden shrink-0 border border-white/10">
+          {/* Watch 1 */}
+          <div className="relative w-[120px] h-[90px] md:w-[140px] md:h-[105px] lg:w-[160px] lg:h-[115px] rounded-[14px] overflow-hidden shrink-0 border border-glass-ghost">
             <Image
-              src="/chair_gray.png"
-              alt="Modern gray armchair"
+              src="/watch_h1.jpg"
+              alt="Luxury watch detail"
               fill
               className="object-cover"
             />
           </div>
 
-          {/* Chair 2 - Blue velvet wingback */}
-          <div className="relative w-[120px] h-[90px] md:w-[140px] md:h-[105px] lg:w-[160px] lg:h-[115px] rounded-[14px] overflow-hidden shrink-0 border border-white/10">
+          {/* Watch 2 */}
+          <div className="relative w-[120px] h-[90px] md:w-[140px] md:h-[105px] lg:w-[160px] lg:h-[115px] rounded-[14px] overflow-hidden shrink-0 border border-glass-ghost">
             <Image
-              src="/chair_1.jpg"
-              alt="Blue velvet wingback chair"
+              src="/watch_h2.jpg"
+              alt="Premium timepiece"
               fill
               className="object-cover"
             />
           </div>
 
-          {/* Chair 3 - Striped pattern chair */}
-          <div className="relative w-[120px] h-[90px] md:w-[140px] md:h-[105px] lg:w-[160px] lg:h-[115px] rounded-[14px] overflow-hidden shrink-0 border border-white/10">
+          {/* Watch 3 */}
+          <div className="relative w-[120px] h-[90px] md:w-[140px] md:h-[105px] lg:w-[160px] lg:h-[115px] rounded-[14px] overflow-hidden shrink-0 border border-glass-ghost">
             <Image
-              src="/chair_2.jpg"
-              alt="Striped accent chair"
+              src="/watch_3.jpg"
+              alt="Elegant watch design"
               fill
               className="object-cover"
             />
@@ -48,23 +48,23 @@ export default function Hero() {
         </div>
 
         {/* Description Text */}
-        <p className="text-sm md:text-base lg:text-[15px] leading-[1.7] md:leading-[1.75] text-white/80 max-w-[320px] lg:max-w-[280px] font-normal">
-          Our chairs are well crafter to suit
+        <p className="text-sm md:text-base lg:text-[15px] leading-[1.7] md:leading-[1.75] text-glass-heavy max-w-[320px] lg:max-w-[280px] font-normal">
+          Our watches are well crafted to suit
           <br />
-          any space, crafter and{" "}
-          <span className="text-[#7FD17F] underline decoration-[#7FD17F] underline-offset-2">sculpted</span> to
+          any style, crafted and{" "}
+          <span className="text-accent underline decoration-accent underline-offset-2">sculpted</span> to
           <br />
           your desired taste that will effortlessly
           <br />
-          fit your space.
+          complement your look.
         </p>
       </div>
 
-      {/* Right Side - Large Hero Image (Beige armchair with wooden frame) */}
+      {/* Right Side - Large Hero Image */}
       <div className="hidden lg:block absolute top-0 right-0 w-[50%] h-full">
         <Image
-          src="/chair_3.jpg"
-          alt="Luxury beige armchair with wooden frame"
+          src="/watch_hero.jpg"
+          alt="Luxury premium watch"
           fill
           className="object-cover object-center"
           priority
@@ -74,8 +74,8 @@ export default function Hero() {
       {/* Mobile/Tablet Hero Image */}
       <div className="lg:hidden w-full h-[350px] md:h-[450px] relative mt-6">
         <Image
-          src="/chair_3.jpg"
-          alt="Luxury beige armchair with wooden frame"
+          src="/watch_hero.jpg"
+          alt="Luxury premium watch"
           fill
           className="object-cover object-center"
           priority
