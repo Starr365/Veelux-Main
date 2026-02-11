@@ -19,6 +19,8 @@ interface CarouselProps {
     navPosition?: "center" | "left";
 }
 
+import Button from "./Button";
+
 export default function Carousel({
     children,
     spaceBetween = 16,
@@ -57,20 +59,20 @@ export default function Carousel({
                 className={`flex gap-3 mt-7 md:mt-9 ${navPosition === "center" ? "justify-center" : "justify-start"
                     }`}
             >
-                <button
+                <Button
                     onClick={() => swiperRef.current?.slidePrev()}
-                    className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/8 transition-colors"
+                    className="p-0 w-10 h-10 md:w-11 md:h-11 rounded-full text-black"
                     aria-label="Previous slide"
                 >
-                    <GoArrowLeft className="w-4 h-4 md:w-[18px] md:h-[18px] text-white" />
-                </button>
-                <button
+                    <GoArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
+                </Button>
+                <Button
                     onClick={() => swiperRef.current?.slideNext()}
-                    className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/8 transition-colors"
+                    className="p-0 w-10 h-10 md:w-11 md:h-11 rounded-full text-black"
                     aria-label="Next slide"
                 >
-                    <GoArrowRight className="w-4 h-4 md:w-[18px] md:h-[18px] text-white" />
-                </button>
+                    <GoArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+                </Button>
             </div>
         </div>
     );

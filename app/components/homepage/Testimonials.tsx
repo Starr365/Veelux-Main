@@ -8,6 +8,7 @@ import type { Swiper as SwiperType } from "swiper";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 import "swiper/css";
+import Button from "../shared/Button";
 
 const testimonials = [
     {
@@ -49,7 +50,7 @@ export default function Testimonials() {
                 {/* Left - Static Image */}
                 <div className="relative w-full h-[260px] md:h-auto md:min-h-[280px] rounded-[14px] overflow-hidden">
                     <Image
-                        src="/watch_lux.jpg"
+                        src="/watch_black.jpg"
                         alt="Veelux luxury watch"
                         fill
                         className="object-cover object-center"
@@ -65,7 +66,7 @@ export default function Testimonials() {
                         modules={[Autoplay]}
                         slidesPerView={1}
                         autoplay={{
-                            delay: 5000,
+                            delay: 3000,
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         }}
@@ -75,7 +76,7 @@ export default function Testimonials() {
                         {testimonials.map((testimonial, index) => (
                             <SwiperSlide key={index}>
                                 <div className="pr-2">
-                                    <p className="text-white/40 text-[13px] md:text-[14px] lg:text-[15px] font-light leading-[1.8] wrap-break-word whitespace-normal">
+                                    <p className="max-w-2xl text-white text-sm md:text-base lg:text-md font-light leading-[1.8] wrap-break-word whitespace-normal">
                                         {testimonial.quote}
                                     </p>
 
@@ -89,10 +90,10 @@ export default function Testimonials() {
                                             />
                                         </div>
                                         <div>
-                                            <p className="text-white text-[13px] font-semibold">
+                                            <p className="text-white text-base font-semibold">
                                                 {testimonial.name}
                                             </p>
-                                            <p className="text-white/25 text-[11px] font-light">
+                                            <p className="text-white text-sm font-light">
                                                 {testimonial.role}
                                             </p>
                                         </div>
@@ -104,20 +105,20 @@ export default function Testimonials() {
 
                     {/* Navigation */}
                     <div className="flex gap-2 mt-6">
-                        <button
+                        <Button
                             onClick={() => swiperRef.current?.slidePrev()}
-                            className="w-9 h-9 rounded-lg border border-white/25 flex items-center justify-center hover:bg-white/8 transition-colors"
+                            className="p-0 w-10 h-10 md:w-11 md:h-11 rounded-full text-black"
                             aria-label="Previous testimonial"
                         >
-                            <GoArrowLeft className="w-4 h-4 text-white" />
-                        </button>
-                        <button
+                            <GoArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
+                        </Button>
+                        <Button
                             onClick={() => swiperRef.current?.slideNext()}
-                            className="w-9 h-9 rounded-lg border border-white/25 flex items-center justify-center hover:bg-white/8 transition-colors"
+                            className="p-0 w-10 h-10 md:w-11 md:h-11 rounded-full text-black"
                             aria-label="Next testimonial"
                         >
-                            <GoArrowRight className="w-4 h-4 text-white" />
-                        </button>
+                            <GoArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+                        </Button>
                     </div>
                 </div>
             </div>

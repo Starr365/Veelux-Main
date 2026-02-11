@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Left Side - Content */}
       <div className="flex flex-col justify-start px-6 md:px-10 pt-24 md:pt-28 lg:pt-32 pb-8 relative z-10 w-full">
         {/* Main Headline */}
-        <h1 className="text-2xl md:text-4xl lg:text-[40px] leading-normal mb-8 md:mb-10 lg:mb-12 tracking-[-0.02em]">
+        <h1 className="text-2xl md:text-4xl lg:text-[40px] leading-normal mb-8 md:mb-10 lg:mb-12 tracking-[0.05em]">
           <span className="text-white">LUXURY DESIGN</span>
           <br />
           <span className="text-white">UNIQUE, DURABLE</span>

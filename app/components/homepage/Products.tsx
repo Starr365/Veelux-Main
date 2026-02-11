@@ -73,7 +73,7 @@ export default function Products() {
             {/* Header Row */}
             <div className="flex items-end justify-between mb-8 md:mb-10">
                 <div>
-                    <p className="text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/30 font-normal mb-2 md:mb-3">
+                    <p className="text-xs md:text-base tracking-[0.02em] uppercase text-white font-normal mb-2 md:mb-3">
                         Discover Veelux
                     </p>
                     <h2 className="text-[22px] md:text-[28px] lg:text-[34px] font-extrabold text-white leading-[1.15] uppercase tracking-tight">
@@ -88,14 +88,14 @@ export default function Products() {
             {/* Carousel */}
             <Carousel
                 spaceBetween={16}
-                slidesPerView={1.4}
+                slidesPerView={4}
                 breakpoints={{
-                    480: { slidesPerView: 2.2, spaceBetween: 16 },
-                    768: { slidesPerView: 3.2, spaceBetween: 18 },
-                    1024: { slidesPerView: 4.2, spaceBetween: 20 },
-                    1280: { slidesPerView: 4.8, spaceBetween: 20 },
+                    480: { slidesPerView: 2, spaceBetween: 16 },
+                    768: { slidesPerView: 3, spaceBetween: 18 },
+                    1024: { slidesPerView: 4, spaceBetween: 20 },
+                    1280: { slidesPerView: 4, spaceBetween: 20 },
                 }}
-                autoplayDelay={3000}
+                autoplayDelay={2000}
             >
                 {products.map((product, index) => (
                     <ProductCard

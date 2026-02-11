@@ -1,18 +1,14 @@
 import Link from "next/link";
-import {
-    HiPhone,
-    HiEnvelope,
-    HiClock,
-} from "react-icons/hi2";
+import { HiPhone, HiEnvelope, HiClock } from "react-icons/hi2";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { BsWatch } from "react-icons/bs";
 
 const navLinks = [
     { label: "Home", href: "/" },
-    { label: "Products", href: "/products" },
-    { label: "About", href: "/about" },
+    { label: "Products", href: "#products" },
+    { label: "About", href: "#about" },
     { label: "Pricing", href: "/pricing" },
-    { label: "Reviews", href: "/reviews" },
+    { label: "Reviews", href: "#reviews" },
 ];
 
 const legalLinks = [
@@ -35,7 +31,7 @@ const contactInfo = [
     {
         icon: HiEnvelope,
         text: "veelux@gmail.com",
-        iconColor: "text-white/40",
+        iconColor: "text-accent",
     },
     {
         icon: HiClock,
@@ -53,7 +49,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 lg:gap-16 max-w-6xl mx-auto">
                     {/* Column 1 - Veelux */}
                     <div>
-                        <h3 className="text-white text-[15px] md:text-[16px] font-semibold mb-5 md:mb-6">
+                        <h3 className="text-white text-base md:text-xl font-semibold mb-5 md:mb-6">
                             Veelux
                         </h3>
                         <ul className="space-y-3 md:space-y-3.5">
@@ -61,7 +57,7 @@ export default function Footer() {
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-white/30 text-[13px] md:text-[14px] font-light hover:text-white transition-colors"
+                                        className="text-white text-sm md:text-base font-light hover:text-accent transition-colors"
                                     >
                                         {link.label}
                                     </Link>
@@ -72,7 +68,7 @@ export default function Footer() {
 
                     {/* Column 2 - Legal */}
                     <div>
-                        <h3 className="text-white text-[15px] md:text-[16px] font-semibold mb-5 md:mb-6 uppercase tracking-wider">
+                        <h3 className="text-white text-base md:text-xl font-semibold mb-5 md:mb-6 uppercase tracking-wider">
                             Legal
                         </h3>
                         <ul className="space-y-3 md:space-y-3.5">
@@ -80,7 +76,7 @@ export default function Footer() {
                                 <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-white/30 text-[13px] md:text-[14px] font-light hover:text-white transition-colors"
+                                        className="text-white text-sm md:text-base font-light hover:text-accent transition-colors"
                                     >
                                         {link.label}
                                     </Link>
@@ -91,7 +87,7 @@ export default function Footer() {
 
                     {/* Column 3 - Contact */}
                     <div>
-                        <h3 className="text-white text-[15px] md:text-[16px] font-semibold mb-5 md:mb-6 uppercase tracking-wider">
+                        <h3 className="text-white text-base md:text-xl font-semibold mb-5 md:mb-6 uppercase tracking-wider">
                             Contact
                         </h3>
                         <ul className="space-y-4 md:space-y-5">
@@ -103,11 +99,11 @@ export default function Footer() {
                                             className={`w-[18px] h-[18px] mt-0.5 shrink-0 ${item.iconColor}`}
                                         />
                                         <div>
-                                            <p className="text-white/40 text-[13px] md:text-[14px] font-light">
+                                            <p className="text-white text-sm md:text-base font-light hover:underline">
                                                 {item.text}
                                             </p>
                                             {item.subtext && (
-                                                <p className="text-white/40 text-[12px] md:text-[13px] font-light mt-0.5">
+                                                <p className="text-white text-[12px] md:text-[13px] font-light mt-0.5">
                                                     {item.subtext}
                                                 </p>
                                             )}
@@ -121,20 +117,20 @@ export default function Footer() {
             </div>
 
             {/* Divider */}
-            <div className="mx-8 md:mx-12 lg:mx-16 h-px bg-white/8" />
+            <div className="mx-8 md:mx-12 lg:mx-16 h-px bg-white/20" />
 
             {/* Watermark Section */}
             <div className="relative px-8 md:px-12 lg:px-16 py-10 md:py-14">
                 {/* Large Watermark Text + Icon */}
-                <div className="flex items-center gap-2 md:gap-4 select-none pointer-events-none">
+                <div className="flex items-center justify-center gap-2 md:gap-4 select-none pointer-events-none">
                     {/* Tilted Watch Icon */}
                     <BsWatch
-                        className="text-white/8 -rotate-25"
+                        className="text-white/25 -rotate-25"
                         style={{ fontSize: "clamp(80px, 12vw, 160px)" }}
                     />
                     {/* VEELUX Watermark */}
                     <span
-                        className="text-white/8 font-extrabold uppercase tracking-wider leading-none"
+                        className="text-white/25 font-extrabold uppercase tracking-wider leading-none"
                         style={{ fontSize: "clamp(80px, 14vw, 200px)" }}
                     >
                         VEELUX
@@ -144,7 +140,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <div className="text-center pb-6 md:pb-8">
-                <p className="text-white/30 text-[10px] md:text-[11px] tracking-[0.15em] font-light uppercase">
+                <p className="text-white/25 text-[10px] md:text-[11px] tracking-[0.15em] font-light uppercase">
                     © {new Date().getFullYear()} Veelux by Starr Codes
                 </p>
             </div>
